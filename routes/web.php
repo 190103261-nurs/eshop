@@ -45,5 +45,5 @@ Route::get('post/add', function(){
 
 Route::get('post', function(){
     $post = Post::find(1);
-    return $post;
+    return $post -> body;
 });
